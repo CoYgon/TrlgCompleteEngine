@@ -16,11 +16,11 @@ trlg_app.db-shm
 wwwroot/
 
 # ==========================================
-# Native SQLite library (platform-specific, do not commit)
-# Each user must download the correct sqlite3.dll/.so/.dylib for
-# their OS/architecture -- see README.md for instructions.
+# Native SQLite library
+# sqlite3.dll (Windows) IS committed to this repo for convenience -- see README.md.
+# Other-platform builds (.so / .dylib) are still excluded since this repo
+# targets Windows; add and un-ignore them here if you need Linux/macOS binaries too.
 # ==========================================
-sqlite3.dll
 sqlite3.so
 libsqlite3.dylib
 
