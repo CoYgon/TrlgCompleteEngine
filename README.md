@@ -12,16 +12,14 @@ ile kullanan ve ham `Socket` üzerinden HTTP sunan bir deneysel web motoru.
 ## Gereksinimler
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- Native SQLite3 kütüphanesi (işletim sistemine göre):
-  - **Windows:** [sqlite.org/download.html](https://www.sqlite.org/download.html) →
-    "Precompiled Binaries for Windows" → `sqlite-dll-win-x64-*.zip` indir,
-    içindeki `sqlite3.dll` dosyasını proje klasörüne (`.csproj` ile aynı yere) koy.
+- Native SQLite3 kütüphanesi:
+  - **Windows:** `sqlite3.dll` bu repoya dahil edilmiştir, ekstra bir şey yapman gerekmiyor.
   - **Linux (Debian/Ubuntu):** `sudo apt install libsqlite3-0`
   - **macOS:** genelde sistemde hazır gelir.
 
-`sqlite3.dll` / `.so` / `.dylib` dosyaları platforma özgü oldukları için
-`.gitignore` ile repodan hariç tutulmuştur — her geliştirici kendi işletim
-sistemi için indirmelidir.
+Linux/macOS'ta kendi platformunun `.so` / `.dylib` dosyasını projeye eklemek
+istersen, `.gitignore`'daki ilgili satırı kaldırıp `git add -f <dosya>` ile
+ekleyebilirsin.
 
 ## Kurulum ve Çalıştırma
 
