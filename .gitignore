@@ -1,0 +1,48 @@
+# ==========================================
+# .NET Build Artifacts
+# ==========================================
+bin/
+obj/
+out/
+*.pdb
+
+# ==========================================
+# TRLG Runtime Data (auto-generated at first run)
+# ==========================================
+trlg_app.db
+trlg_app.db-journal
+trlg_app.db-wal
+trlg_app.db-shm
+wwwroot/
+
+# ==========================================
+# Native SQLite library (platform-specific, do not commit)
+# Each user must download the correct sqlite3.dll/.so/.dylib for
+# their OS/architecture -- see README.md for instructions.
+# ==========================================
+sqlite3.dll
+sqlite3.so
+libsqlite3.dylib
+
+# ==========================================
+# IDE / Editor
+# ==========================================
+.vs/
+.vscode/
+*.user
+*.suo
+.idea/
+*.DotSettings.user
+
+# ==========================================
+# OS files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# NuGet (not used here, but future-proof)
+# ==========================================
+*.nupkg
+packages/
